@@ -34,6 +34,6 @@ class Song:
         return song
 
 
-print(Song.create_table())
+Song.create_table()
 print(CURSOR.execute("PRAGMA table_info(songs)").fetchall())
 
